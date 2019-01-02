@@ -1,0 +1,7 @@
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\SynchronizationPrimitive\bin\Debug\SynchronizationPrimitive.exe.config
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\SynchronizationPrimitive\bin\Debug\SynchronizationPrimitive.exe
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\SynchronizationPrimitive\bin\Debug\SynchronizationPrimitive.pdb
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.csprojAssemblyReference.cache
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.csproj.CoreCompileInputs.cache
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.exe
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.pdb

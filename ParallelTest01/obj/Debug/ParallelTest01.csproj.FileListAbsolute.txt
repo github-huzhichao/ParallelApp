@@ -1,0 +1,7 @@
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\ParallelTest01\bin\Debug\ParallelTest01.exe.config
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\ParallelTest01\bin\Debug\ParallelTest01.exe
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\ParallelTest01\bin\Debug\ParallelTest01.pdb
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\ParallelTest01\obj\Debug\ParallelTest01.csprojAssemblyReference.cache
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\ParallelTest01\obj\Debug\ParallelTest01.csproj.CoreCompileInputs.cache
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\ParallelTest01\obj\Debug\ParallelTest01.exe
+E:\MyWork\Parallel&Concurrent\ParallelAndConcurrent\ParallelTest01\obj\Debug\ParallelTest01.pdb
