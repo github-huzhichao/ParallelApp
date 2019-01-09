@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManualResetEventSlimTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpinLockTest.cs" />
+    <Compile Include="SpinWaitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

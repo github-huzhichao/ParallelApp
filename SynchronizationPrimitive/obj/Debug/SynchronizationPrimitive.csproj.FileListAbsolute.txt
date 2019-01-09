@@ -12,3 +12,10 @@ E:\MyWork\ParallelApp\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitiv
 E:\MyWork\ParallelApp\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.csproj.CoreCompileInputs.cache
 E:\MyWork\ParallelApp\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.exe
 E:\MyWork\ParallelApp\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.pdb
+E:\MyWork\ParallelAndConcurrent\SynchronizationPrimitive\bin\Debug\SynchronizationPrimitive.exe.config
+E:\MyWork\ParallelAndConcurrent\SynchronizationPrimitive\bin\Debug\SynchronizationPrimitive.exe
+E:\MyWork\ParallelAndConcurrent\SynchronizationPrimitive\bin\Debug\SynchronizationPrimitive.pdb
+E:\MyWork\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.csprojAssemblyReference.cache
+E:\MyWork\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.csproj.CoreCompileInputs.cache
+E:\MyWork\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.exe
+E:\MyWork\ParallelAndConcurrent\SynchronizationPrimitive\obj\Debug\SynchronizationPrimitive.pdb

@@ -16,6 +16,15 @@ namespace SynchronizationPrimitive
 
         static void Main(string[] args)
         {
+            SpinLockTest spinLockTest = new SpinLockTest();
+            spinLockTest.SpinLockMethod();
+
+
+            //Monitor.Enter("");
+            //Monitor.Exit("");
+            //Monitor.Pulse()
+            //Monitor.Wait()
+
             Stopwatch stopwatch = Stopwatch.StartNew();
             _tasks = new Task[_participants];
             _barrier = new Barrier(_participants, (barrier) =>
@@ -31,6 +40,7 @@ namespace SynchronizationPrimitive
                     {
                         CreatePlanets(participantNumber);
                         _barrier.SignalAndWait();
+                        //_barrier.SignalAndWait()
                         CreateStarts(participantNumber);
                         _barrier.SignalAndWait();
                         CheckCollisionsBetweenPlanets(participantNumber);
@@ -44,7 +54,8 @@ namespace SynchronizationPrimitive
             }
             var finalTask = Task.Factory.ContinueWhenAll(_tasks, (tasks) =>
             {
-                Task.WaitAll(tasks);
+                //Task.WaitAll(tasks);
+                Task.WaitAll(_tasks);
                 Console.WriteLine("All the phases were executed");
                 _barrier.Dispose();
             });
@@ -58,57 +69,62 @@ namespace SynchronizationPrimitive
 
             Console.WriteLine(stopwatch.ElapsedMilliseconds);
 
-            Stopwatch stopwatch1 = Stopwatch.StartNew();
+            #region MyRegion
+            //Stopwatch stopwatch1 = Stopwatch.StartNew();
 
-            Task[] _tasks1 = new Task[_participants];
+            //Task[] _tasks1 = new Task[_participants];
 
-            for (int i = 0; i < _participants; i++)
-            {
-                var t = Task.Factory.StartNew(() =>
-                {
-                    for (int j = 0; j < 10; j++)
-                    {
-                        CreatePlanets(j);
-                    }
-                }).ContinueWith((task) =>
-                {
-                    for (int j = 0; j < 10; j++)
-                    {
-                        CreateStarts(i);
-                    }
-                }).ContinueWith((task)=> {
-                    for (int j = 0; j < 10; j++)
-                    {
-                        CheckCollisionsBetweenPlanets(i);
-                    }
-                }).ContinueWith((task)=> {
-                    for (int j = 0; j < 10; j++)
-                    {
-                        CheckCollisionsBetweenStars(i);
-                    }
-                }).ContinueWith((task)=> {
-                    for (int j = 0; j < 10; j++)
-                    {
-                        RenderCollisions(i);
-                    }
-                });
-                _tasks1[i] = t;
-
-            }
-
-            var finalTask1 = Task.Factory.ContinueWhenAll(_tasks1, (tasks) =>
-            {
-                Task.WaitAll(tasks);
-                Console.WriteLine("All the phases were executed");
-            });
-            //var finalTask = Task.Factory.ContinueWhenAll(_tasks, (tasks) =>
+            //for (int i = 0; i < _participants; i++)
             //{
-            //    Task.WaitAll(_tasks);
+            //    var t = Task.Factory.StartNew(() =>
+            //    {
+            //        for (int j = 0; j < 10; j++)
+            //        {
+            //            CreatePlanets(j);
+            //        }
+            //    }).ContinueWith((task) =>
+            //    {
+            //        for (int j = 0; j < 10; j++)
+            //        {
+            //            CreateStarts(i);
+            //        }
+            //    }).ContinueWith((task) =>
+            //    {
+            //        for (int j = 0; j < 10; j++)
+            //        {
+            //            CheckCollisionsBetweenPlanets(i);
+            //        }
+            //    }).ContinueWith((task) =>
+            //    {
+            //        for (int j = 0; j < 10; j++)
+            //        {
+            //            CheckCollisionsBetweenStars(i);
+            //        }
+            //    }).ContinueWith((task) =>
+            //    {
+            //        for (int j = 0; j < 10; j++)
+            //        {
+            //            RenderCollisions(i);
+            //        }
+            //    });
+            //    _tasks1[i] = t;
+
+            //}
+
+            //var finalTask1 = Task.Factory.ContinueWhenAll(_tasks1, (tasks) =>
+            //{
+            //    Task.WaitAll(tasks);
             //    Console.WriteLine("All the phases were executed");
-            //    _barrier.Dispose();
             //});
-            finalTask1.Wait();
-            Console.WriteLine(stopwatch1.ElapsedMilliseconds);
+            ////var finalTask = Task.Factory.ContinueWhenAll(_tasks, (tasks) =>
+            ////{
+            ////    Task.WaitAll(_tasks);
+            ////    Console.WriteLine("All the phases were executed");
+            ////    _barrier.Dispose();
+            ////});
+            //finalTask1.Wait();
+            //Console.WriteLine(stopwatch1.ElapsedMilliseconds); 
+            #endregion
 
 
             Console.ReadLine();
